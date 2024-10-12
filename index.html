@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <!--===== favicon =====-->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!--===== style sheet =====-->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="rating-container">
+      <!--===== rating card section start =====-->
+      <div class="card" id="rating-card">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </div>
+        <h1 class="title">How did we do?</h1>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <ul class="rating" id="rating">
+          <li data-rating="1" tabindex="0">1</li>
+          <li data-rating="2" tabindex="0">2</li>
+          <li data-rating="3" tabindex="0">3</li>
+          <li data-rating="4" tabindex="0">4</li>
+          <li data-rating="5" tabindex="0">5</li>
+        </ul>
+        <a href="#" class="btn" id="submit-button" disabled>Submit</a>
+      </div>
+      <!--===== rating card section start =====-->
+
+      <!--===== thank you card section start =====-->
+      <div id="thank-you-card" class="card hide">
+        <div class="card-img">
+          <img src="./images/illustration-thank-you.svg" alt="phone image" />
+        </div>
+        <div class="selected-rating">
+          You selected <span id="final-rating">0</span> out of 5
+        </div>
+        <h2 class="title">Thank you!</h2>
+        <p class="description">
+          Thank you! We appreciate you taking the time to give a rating. If you
+          ever need more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!--===== thank you card section start =====-->
+    </div>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+:root {
+  /* *** Primary *** */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* *** Neutral *** */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+}
+
+/* 
+===============================================
+rating-card start
+===============================================
+*/
+
+.rating-container {
+  width: 350px;
+  min-height: 300px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(213, 17%, 13%)
+  );
+  border-radius: 1rem;
+  padding: 30px;
+}
+
+/* 
+===============================================
+rating-card start
+===============================================
+*/
+
+.star {
+  background-color: hsla(213, 18%, 24%, 0.63);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--Light-Grey);
+  line-height: 1.3rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.rating li {
+  list-style-type: none;
+  background-color: hsla(213, 18%, 24%, 0.63);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  color: var(--Light-Grey);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.rating li:hover {
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  color: var(--Very-Dark-Blue);
+  background-color: var(--Orange);
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 0.875rem;
+}
+
+.btn:hover {
+  background-color: var(--White);
+}
+
+/* 
+===============================================
+rating-card end
+===============================================
+*/
+
+/* 
+===============================================
+thank you card section start
+===============================================
+*/
+
+.hide {
+  display: none;
+}
+
+#thank-you-card {
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-img img {
+  width: 60%;
+}
+
+.selected-rating {
+  width: 65%;
+  margin: 0 auto 2rem auto;
+  padding: 9px 15px;
+  border-radius: 3rem;
+  background-color: hsl(213, 17%, 20%);
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--Orange);
+}
+
+/* 
+===============================================
+thank you card section end
+===============================================
+*/
